@@ -1,0 +1,7 @@
+timestamp,node,row_cache_entries,row_cache_size_mb,row_cache_hit_rate,key_cache_entries,key_cache_hit_rate,heap_used_mb,load_mb,sensor_events_sstable_count,user_profiles_sstable_count
+2026-03-03T22:08:16.514081,node1,0.0,0.0,0.0,0.0,0.095,0.0,0.0,0,0
+2026-03-03T22:08:21.383153,node2,0.0,0.0,0.0,0.0,0.118,0.0,0.0,0,0
+2026-03-03T22:08:26.103230,node3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
+2026-03-04T13:26:46.641632,node1,0.0,0.0,0.0,0.0,0.192,0.0,0.0,0,0
+2026-03-04T13:26:50.817955,node2,0.0,0.0,0.0,0.0,0.287,0.0,0.0,0,0
+2026-03-04T13:26:54.969559,node3,0.0,0.0,0.0,0.0,0.268,0.0,0.0,0,0
