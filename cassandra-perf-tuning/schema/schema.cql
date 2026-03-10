@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS sensor_events (
 
 -- ── TABLE 2: user_profiles ───────────────────────────────
 -- Read-heavy workload → LeveledCompactionStrategy
--- Row cache: entire partition cached
+-- Row cache: entire partition is cached
 CREATE TABLE IF NOT EXISTS user_profiles (
   user_id    UUID PRIMARY KEY,
   username   TEXT,
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS user_profiles (
 
 
 -- ── TABLE 3: perf_metrics ────────────────────────────────
--- Store benchmark results for comparison
+-- Storing benchmark results for comparison
 CREATE TABLE IF NOT EXISTS perf_metrics (
   run_id      UUID,
   run_time    TIMESTAMP,

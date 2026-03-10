@@ -1,9 +1,8 @@
 """
-plot_results.py — Compare baseline vs tuned benchmark results
-=============================================================
-Usage: python scripts/plot_results.py
+Compares baseline vs tuned benchmark results
+-----------------------------------------------------------
 Reads results/baseline_*.csv and results/tuned_*.csv and
-generates a side-by-side comparison chart.
+generates a side-by-side comparison chart. (comparison_charts.png)
 """
 
 import os

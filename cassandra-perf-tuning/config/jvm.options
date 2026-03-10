@@ -1,7 +1,7 @@
-# ========================================================
+# ============================================================================
 # JVM Options for Cassandra 4.1
-# Tuned for performance on a 4-8GB RAM machine
-# ========================================================
+# Tuned for performance on a 4-8GB RAM machine (local development purpose only)
+# =============================================================================
 
 # Heap size — set to 25-50% of system RAM, max 8G
 -Xms2G

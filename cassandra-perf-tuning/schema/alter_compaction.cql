@@ -1,19 +1,19 @@
 -- ========================================================
 -- Compaction Strategy Migration Scripts
--- Switch strategies live without downtime
+-- Switching strategies live without downtime
 -- ========================================================
 
 USE perf_test;
 
 -- ── SWITCH sensor_events: STCS → LCS ────────────────────
--- Use when read workload increases significantly
+-- Used when read workload increases significantly
 ALTER TABLE sensor_events
 WITH compaction = {
   'class': 'LeveledCompactionStrategy',
   'sstable_size_in_mb': 160
 };
 
--- ── SWITCH sensor_events: back to STCS ──────────────────
+-- ── SWITCH sensor_events: LCS → STCS ──────────────────
 -- Use when write throughput is the priority
 ALTER TABLE sensor_events
 WITH compaction = {

@@ -1,10 +1,9 @@
 """
-collect_metrics.py — Parse nodetool output and save to CSV
-===========================================================
-Usage: python scripts/collect_metrics.py
-Runs nodetool commands against the Docker cluster and
-stores cache hit rates, compaction stats, and table-level
-read/write latencies into results/node_metrics.csv
+Parses nodetool output and saves results to CSV
+------------------------------------------------------------
+Ran nodetool commands against the Docker cluster and
+stored cache hit rates, compaction stats, and table-level
+read/write latencies into results/node_metrics.csv (.gitignore)
 """
 
 import subprocess
@@ -24,14 +23,14 @@ OUTFILE  = "results/node_metrics.csv"
 
 
 def run_nodetool(container: str, *args) -> str:
-    """Execute nodetool inside a Docker container and return stdout."""
+    """Executing nodetool inside a Docker container and return stdout."""
     cmd = ["docker", "exec", container, "nodetool"] + list(args)
     result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
     return result.stdout
 
 
 def parse_info(output: str) -> dict:
-    """Extract row cache and key cache stats from `nodetool info`."""
+    """Extracts row cache and key cache stats from `nodetool info`."""
     data = {}
     patterns = {
         "row_cache_entries":  r"Row Cache\s+:\s+(\d+) entries",

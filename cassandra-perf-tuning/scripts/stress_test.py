@@ -1,9 +1,7 @@
 """
-stress_test.py — Cassandra Multi-threaded Benchmark
-====================================================
-Project: Distributed DB Performance Tuning (Portfolio)
-Author:  Portfolio Project
-Usage:   python scripts/stress_test.py [--mode write|read|both]
+Cassandra's Multi-threaded Benchmark
+----------------------------------------
+--mode write|read|both
 """
 
 import uuid

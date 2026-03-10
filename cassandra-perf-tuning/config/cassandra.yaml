@@ -20,7 +20,7 @@ commitlog_directory: /var/lib/cassandra/commitlog
 saved_caches_directory: /var/lib/cassandra/saved_caches
 hints_directory: /var/lib/cassandra/hints
 
-# ── DISK OPTIMIZATION (critical for EBS gp3) ─────────────
+# ── DISK OPTIMIZATION (critical for EBS gp3 (not used)) ─────────────
 disk_optimization_strategy: ssd
 concurrent_reads: 32
 concurrent_writes: 32
