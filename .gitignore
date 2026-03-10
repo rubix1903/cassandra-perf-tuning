@@ -1,5 +1,5 @@
 /.venv/
-/cassandra-perf-tuning/aws/
-/cassandra-perf-tuning/data/
-/cassandra-perf-tuning/results/csv_files/
-/cassandra-perf-tuning/venv/
+/aws/
+/data/
+/results/csv_files/
+/venv/
