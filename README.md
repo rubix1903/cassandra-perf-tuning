@@ -61,7 +61,7 @@ python scripts/stress_test.py --mode both
 ## Challenges
 - **WSL2 networking** — static IPs in docker-compose don't work reliably on Windows with the WSL2 backend. Switched to hostname-based seed discovery and Docker's internal DNS.
 - **Port conflict on node 1** — all 3 nodes kept failing to form a ring. Something else on the machine was already bound to port 9042. Killed that process, flushed Docker networks, and restarted fresh — all 3 nodes came up healthy with RF=3.
-- **Python 3.13** — cassandra-driver depends on asyncore which was removed in Python 3.12+. Downgraded to Python 3.11 for this project.
+- **Python 3.11** — cassandra-driver depends on asyncore which was removed in Python 3.12+. Downgraded to Python 3.11 for this project.
 - **Heap sizing** — reduced MAX_HEAP_SIZE to 512MB per node so all 3 run simultaneously on a laptop without competing for RAM.
 
 ---
