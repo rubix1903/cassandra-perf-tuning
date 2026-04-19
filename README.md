@@ -69,7 +69,6 @@ python scripts/stress_test.py --mode both
 ## Technologies
 - **Apache Cassandra 4.1** — Distributed NoSQL database
 - **Docker Compose** — Local 3-node cluster orchestration
-- **AWS EBS gp3** — High-performance block storage (6000 IOPS, 250 MB/s)
 - **Python 3.11** — Stress testing and metrics collection
 - **cassandra-driver** — Native CQL Python driver
-- **PyCharm Professional** — IDE with DB tools + SSH remote interpreter
+- **PyCharm Community** — IDE with DB tools + SSH remote interpreter
