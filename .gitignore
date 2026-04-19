@@ -1,6 +1,5 @@
-/.venv/
-/aws/
-/data/
-/results/csv_files/
-/venv/
-/.idea/
+venv
+data
+results/csv_files
+/.venv
+.idea
